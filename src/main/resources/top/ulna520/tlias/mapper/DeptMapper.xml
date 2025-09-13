@@ -12,7 +12,7 @@
     </delete>
 
     <insert id="insertDept" parameterType="top.ulna520.tlias.model.Dept" useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO dept (name, createTime, updateTime) VALUES (#{name}, #{createTime}, #{updateTime})
+        INSERT INTO dept (name, create_time, update_time) VALUES (#{name}, #{createTime}, #{updateTime})
     </insert>
 
     <select id="selectById" parameterType="int" resultType="top.ulna520.tlias.model.Dept">
@@ -20,6 +20,6 @@
     </select>
 
     <update id="updateDept" parameterType="top.ulna520.tlias.model.Dept">
-        UPDATE dept SET name = #{name}, updateTime = #{updateTime} WHERE id = #{id}
+        UPDATE dept SET name = #{name}, update_time = #{updateTime} WHERE id = #{id}
     </update>
 </mapper>

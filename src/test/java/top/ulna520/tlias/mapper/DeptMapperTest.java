@@ -16,7 +16,7 @@ public class DeptMapperTest {
     @Test
     public void testInsertDept(){
         Dept dept=new Dept();
-        dept.setName("测试");
+        dept.setName("测试1");
         dept.setCreateTime(new Date());
         dept.setUpdateTime(new Date());
         deptMapper.insertDept(dept);

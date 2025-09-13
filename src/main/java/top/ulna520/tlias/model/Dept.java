@@ -10,7 +10,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Component
 public class Dept {
-    int id;
+    Integer id;
     String name;
     Date createTime;
     Date updateTime;
