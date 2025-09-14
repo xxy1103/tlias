@@ -52,4 +52,10 @@
         </set>
         WHERE id = #{id}
     </update>
+    
+    <select id="getByUsernameAndPassword" parameterType="top.ulna520.tlias.model.User" resultType="top.ulna520.tlias.model.User">
+        SELECT * FROM user WHERE username = #{username} AND password = #{password}
+    </select>
+
+
 </mapper>
